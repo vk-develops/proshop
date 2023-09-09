@@ -13,7 +13,7 @@ const products = [
     },
     {
         _id: 2,
-        name: "iphone 11 Pro (256GB)",
+        name: "iphone 11 Pro (256GB) Storage",
         image: "/images/phone.jpg",
         description: "AirPods (3rd generation) and AirPods Pro (2nd generation) are sweat and water resistant for non-water sports and exercise, and they are IPX4 rated.",
         brand: "Apple",
@@ -61,7 +61,7 @@ const products = [
     },
     {
         _id: 6,
-        name: "Amazon Web Services",
+        name: "Amazon Web Services Boxes",
         image: "/images/alexa.jpg",
         description: "AirPods (3rd generation) and AirPods Pro (2nd generation) are sweat and water resistant for non-water sports and exercise, and they are IPX4 rated.",
         brand: "Apple",
