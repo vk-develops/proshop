@@ -1,11 +1,15 @@
 const express = require("express");
 
+const cors = require("cors");
+
 const products = require("./Data/Products");
 
 const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+//Middlewares
+app.use(cors());
 
 
 app.get("/", (req, res) => {
