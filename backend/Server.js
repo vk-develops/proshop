@@ -1,7 +1,12 @@
-const express = require("express");
-const dotenv = require("dotenv");
-const cors = require("cors");
-const products = require("./Data/Products");
+// const express = require("express");
+// const dotenv = require("dotenv");
+// const cors = require("cors");
+// const products = require("./Data/Products");
+
+import express from "express";
+import dotenv from "dotenv";
+import cors from "cors";
+import products from "./Data/Products.js";
 
 const PORT = process.env.PORT || 3000;
 
