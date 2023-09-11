@@ -1,12 +1,14 @@
 const express = require("express");
-
+const dotenv = require("dotenv");
 const cors = require("cors");
-
 const products = require("./Data/Products");
+
+const PORT = process.env.PORT || 3000;
+
+dotenv.config();
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
 
 //Middlewares
 app.use(cors());
@@ -37,5 +39,5 @@ app.get('/api/products/:id', (req, res) => {
 
 //App Listen
 app.listen(PORT, () => {
-    console.log(`Server started and running on port ${PORT}`);
+    console.log(`Server started in ${process.env.NODE_ENV} mode and running on port ${PORT}`);
 });
