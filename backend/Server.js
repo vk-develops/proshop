@@ -6,11 +6,14 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import connectDB from "./config/db.js";
 import products from "./Data/Products.js";
 
 const PORT = process.env.PORT || 3000;
 
 dotenv.config();
+
+connectDB();
 
 const app = express();
 
